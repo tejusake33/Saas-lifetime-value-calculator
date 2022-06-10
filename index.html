@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Lifetime Value Calculator</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+     <div class="container">
+        <div class="card">
+            <form action="">
+                <div class="block">
+                    <div class="tooltip"> ARPA
+                        <span class="tooltiptext">Average Revenue per Account</span>
+                    </div>
+                    <input id="arpa" type="number" autofocus oninput="calc();"/>
+                    <span>$</span>
+                </div>
+                <div class="block">
+                    <div class="tooltip" style="text-decoration: none;">Gross margin</div>
+                    <input id="gross" type="number" oninput="calc();"/>
+                    <span>%</span>
+                </div>
+                <div class="block">
+                    <div class="tooltip"> Churn
+                        <span class="tooltiptext">The percentage of users that stop using the service each month.</span>
+                    </div>
+                    <input type="number" id="churn" oninput="calc();">
+                    <span>%</span>
+                </div>
+                 <div class="block">
+                    <div class="tooltip"> LTV
+                        <span class="tooltiptext">Customer Lifetime Value - how much you're going to earn on an average customer during the entire period that they're buying from you.</span>
+                    </div>
+                    <input type="number" id="ltv">
+                    <span>$</span>
+                </div> 
+            </form>
+        </div>
+        <div class="card2"></div>
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>
